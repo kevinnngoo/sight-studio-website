@@ -9,16 +9,39 @@
     />
     <title>Services | Sight Studio Eye Care</title>
     <link
+      rel="icon"
+      href="../assets/images/572cb883-a680-4f28-8265-3d9434682710.png"
+      type="image/png"
+    />
+    <!-- Google Fonts -->
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
       <div class="container header-inner">
-        <a href="../index.html" class="logo">Sight&nbsp;Studio</a>
-        <nav class="main-nav" id="navMenu">
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/images/header.final.png"
+            alt="Sight Studio logo"
+            loading="eager"
+            decoding="async"
+          />
+        </a>
+        <nav
+          class="main-nav"
+          id="navMenu"
+          role="navigation"
+          aria-label="Main navigation"
+        >
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html" class="active">Services</a></li>
@@ -26,8 +49,17 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <a href="contact.html" class="btn btn-primary nav-cta" data-booking="true">Book Appointment</a>
-        <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+        <a
+          href="contact.html"
+          class="btn btn-primary nav-cta"
+          data-booking="true"
+          >Book Appointment</a
+        >
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open navigation menu"
+        >
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -54,15 +86,24 @@
           <div class="service-content">
             <h2>Comprehensive Eye Exam</h2>
             <p>
-              Our comprehensive eye exams evaluate your visual acuity and overall
-              ocular health. We assess your prescription needs and screen for
-              conditions like glaucoma, cataracts and macular degeneration.
-              Early detection means better outcomes—so make exams part of your
-              routine.
+              Our comprehensive eye exams evaluate your visual acuity and
+              overall ocular health. We assess your prescription needs and
+              screen for conditions like glaucoma, cataracts and macular
+              degeneration. Early detection means better outcomes—so make exams
+              part of your routine.
             </p>
           </div>
           <div class="service-image">
-            <div class="image-placeholder">Eye Exam</div>
+            <img
+              src="../assets/images/young-girl-eyes-consult.jpg"
+              alt="Comprehensive Eye Exam"
+              style="
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 8px;
+              "
+            />
           </div>
         </div>
 
@@ -78,7 +119,16 @@
             </p>
           </div>
           <div class="service-image">
-            <div class="image-placeholder">Contact Lenses</div>
+            <img
+              src="../assets/images/closeup-clear-contact-lens-fingertip.jpg"
+              alt="Contact Lens Fitting"
+              style="
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 8px;
+              "
+            />
           </div>
         </div>
 
@@ -94,7 +144,16 @@
             </p>
           </div>
           <div class="service-image">
-            <div class="image-placeholder">Pediatric Care</div>
+            <img
+              src="../assets/images/nrd-aMmDIsdnUro-unsplash.jpg"
+              alt="Pediatric Eye Care"
+              style="
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 8px;
+              "
+            />
           </div>
         </div>
 
@@ -110,7 +169,16 @@
             </p>
           </div>
           <div class="service-image">
-            <div class="image-placeholder">Diabetic Care</div>
+            <img
+              src="../assets/images/close-up-old-person-portrait.jpg"
+              alt="Diabetic Eye Examination"
+              style="
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 8px;
+              "
+            />
           </div>
         </div>
       </div>
@@ -124,7 +192,9 @@
           Invest in your vision health—schedule an appointment with our friendly
           team and experience attentive eye care.
         </p>
-        <a href="contact.html" class="btn btn-primary" data-booking="true">Schedule Now</a>
+        <a href="contact.html" class="btn btn-primary" data-booking="true"
+          >Schedule Now</a
+        >
       </div>
     </section>
 
@@ -137,7 +207,10 @@
             75 Freshwater Boulevard<br />
             Enfield, CT 06082<br />
             Phone: <a href="tel:8603942004">(860) 394‑2004</a><br />
-            Email: <a href="mailto:office@sightstudioeye.com">office@sightstudioeye.com</a>
+            Email:
+            <a href="mailto:office@sightstudioeye.com"
+              >office@sightstudioeye.com</a
+            >
           </p>
         </div>
         <div class="footer-col">
@@ -152,9 +225,10 @@
         <div class="footer-col">
           <h4>Hours</h4>
           <p>
-            Mon–Fri: 9:00 AM–5:00 PM<br />
-            Sat: 9:00 AM–1:00 PM<br />
-            Sun: Closed
+            Sun: Closed <br />
+            Mon: Closed<br />
+            Tue–Fri: 9:00 AM–5:00 PM<br />
+            Sat: 9:00 AM–3:00 PM<br />
           </p>
         </div>
       </div>
