@@ -575,11 +575,15 @@ p {
 
 .doctor-text {
   flex: 1 1 60%;
-}
-
-.doctor-image {
+  margin: 0 auto 3.5rem auto;
+  line-height: 4.0;
+  /* move text lower */
+  margin-top: 3.5rem;
+}.doctor-image {
   flex: 1 1 35%;
   text-align: center;
+  /* move image upwards */
+  margin-top: -7rem;
 }
 
 .doctor-image img {
@@ -587,6 +591,8 @@ p {
   max-width: 300px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* shift photo slightly to right*/
+  margin-left: 7rem;
 }
 
 .practice-features {
@@ -764,7 +770,18 @@ select:focus {
 
 .quick-info {
   background-color: var(--color-light);
-  padding: 2rem 0;
+  padding: 4rem 0 2rem 0;
+}
+
+.quick-info .section-title {
+  text-align: center;
+}
+
+.quick-info p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem auto;
+  line-height: 1.6;
 }
 
 .quick-info-grid {
@@ -787,6 +804,9 @@ select:focus {
   color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
+
+
+
 
 .appointment-info p,
 .insurance-info p {

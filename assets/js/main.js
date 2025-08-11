@@ -40,19 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  // Booking button placeholder
-  const bookingButtons = document.querySelectorAll('.btn-primary, .btn-cta');
-  bookingButtons.forEach(btn => {
-    btn.addEventListener('click', e => {
-      // Only intercept clicks that lead to booking; if link is
-      // within the site (e.g., contact page) then allow default behavior.
-      if (btn.dataset.booking === 'true') {
-        e.preventDefault();
-        alert('Online booking integration coming soon! Please call (860) 394‑2004 to schedule.');
-      }
-    });
-  });
 });
 
 // Image loading optimization
