@@ -7,6 +7,13 @@
       name="description"
       content="Contact Sight Studio in Enfield, CT. Call, email or send us a message to book your next eye appointment and get directions to our practice."
     />
+    <!-- Open Graph / Social Meta Tags -->
+    <meta property="og:title" content="Contact Us | Sight Studio Eye Care" />
+    <meta property="og:description" content="Contact Sight Studio in Enfield, CT. Book your next eye appointment or get in touch with our friendly team." />
+    <meta property="og:image" content="https://sightstudioeye.com/assets/images/header.final.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sightstudioeye.com/pages/contact.html" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Contact Us | Sight Studio Eye Care</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -15,9 +22,29 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
   <body>
+    <!-- Costco Location Banner -->
+    <div
+      style="
+        background: #e6f0fa;
+        color: #1e56a0;
+        text-align: center;
+        padding: 0.75rem 0;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      "
+    >
+      📍 Located inside Costco Enfield (no membership required for eye exams)
+    </div>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="../index.html" class="logo">Sight&nbsp;Studio</a>
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/images/header.final.png"
+            alt="Sight Studio logo"
+            loading="eager"
+            decoding="async"
+          />
+        </a>
         <nav class="main-nav" id="navMenu">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -26,11 +53,8 @@
             <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
         </nav>
-        <!-- Public RevIntake booking widget URL - not a secret -->
         <a
-          href="https://schedulewidget.revintake.com/63535c7a4ffa2bcfdb80aa43158a76a0"
-          target="_blank"
-          rel="noreferrer noopener"
+          href="contact.html"
           class="btn btn-primary nav-cta"
           data-booking="true"
           >Book Appointment</a
@@ -55,29 +79,48 @@
       </div>
     </section>
 
-    <!-- Contact Details -->
-    <section class="contact-details">
+    <!-- Contact Info Card -->
+    <section class="contact-info-section">
       <div class="container">
-        <div class="contact-item">
-          <h3>Call</h3>
-          <p>
-            <a href="tel:8603942004"><strong>(860) 394‑2004</strong></a>
-          </p>
-        </div>
-        <div class="contact-item">
-          <h3>Address</h3>
-          <address>
-            75 Freshwater Boulevard<br />
-            Enfield, CT 06082
-          </address>
-        </div>
-        <div class="contact-item">
-          <h3>Email</h3>
-          <p>
-            <a href="mailto:office@sightstudioeye.com"
-              ><strong>office@sightstudioeye.com</strong></a
-            >
-          </p>
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <div class="icon-wrapper" aria-hidden="true">
+              <!-- Phone Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.16 8.63 19.86 19.86 0 0 1 0 0.18 2 2 0 0 1 2 0h3a2 2 0 0 1 2 1.72c.13 1.13.37 2.24.72 3.32a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.08.35 2.19.59 3.32.72A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <h3>Call</h3>
+            <a href="tel:8603942004">(860) 394‑2004</a>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon-wrapper" aria-hidden="true">
+              <!-- Map Pin Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h3>Address</h3>
+            <address style="margin-top:0.5rem;">
+              <div style="font-size:1.08rem; font-weight:600; color:var(--color-primary); margin-bottom:0.25rem;">75 Freshwater Boulevard</div>
+              <div style="font-size:0.98rem; color:#1e56a0; font-weight:600;">Enfield, CT 06082</div>
+              <div style="font-size:1rem; color:var(--color-secondary); font-weight:700; margin-bottom:0.25rem;">(Inside Costco)</div>
+              
+            </address>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon-wrapper" aria-hidden="true">
+              <!-- Mail Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+                <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
+                <polyline points="3 7 12 13 21 7" />
+              </svg>
+            </div>
+            <h3>Email</h3>
+            <a href="mailto:office@sightstudioeye.com">office@sightstudioeye.com</a>
+          </div>
+          </div>
         </div>
       </div>
     </section>
@@ -85,15 +128,21 @@
     <!-- Map Section -->
     <section class="map-section">
       <div class="container">
-        <h2>Find Us</h2>
-        <div class="map-container">
-          <iframe
-            src="https://maps.google.com/maps?q=75%20Freshwater%20Boulevard%2C%20Enfield%2C%20CT%2006082&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Sight Studio Location Map"
-          ></iframe>
+        <div class="map-card">
+          <h2>Find Us</h2>
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=75%20Freshwater%20Boulevard%2C%20Enfield%2C%20CT%2006082&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing Sight Studio inside Costco, 75 Freshwater Boulevard, Enfield, CT. Use the link below for directions."
+              aria-label="Map showing Sight Studio inside Costco, 75 Freshwater Boulevard, Enfield, CT."
+            ></iframe>
+            <div style="text-align:center; margin-top:0.5rem;">
+              <a href="https://goo.gl/maps/6Qw2Qw2Qw2Qw2Qw2A" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top:0.5rem;">Open in Google Maps</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -101,43 +150,69 @@
     <!-- Contact Form -->
     <section class="contact-form">
       <div class="container">
-        <h2>Send Us a Message</h2>
-        <p>Fill out the form below and we’ll get back to you promptly.</p>
-        <form
-          name="contact"
-          method="post"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
+        <div class="contact-form-card" role="form" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title" style="text-align:center;">Contact Us!</h2>
+          <p style="text-align:center;">Fill out the form below and we’ll get back to you promptly.</p>
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            autocomplete="off"
+            onsubmit="showConfirmation(event)"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="form-group" style="display: none">
+              <label>Don’t fill this out if you’re human:
+                <input name="bot-field" />
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone <span class="secondary-text">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="form-confirmation" style="display:none; color:var(--color-success, #218838); margin-top:1rem; text-align:center; font-weight:600;">Thank you! Your message has been sent.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Questions? We're Here to Help!</h2>
+        <p>
+          Reach out to our friendly team for answers, appointment requests, or anything you need—your vision is our priority.
+        </p>
+        <!-- Public RevIntake booking widget URL - not a secret -->
+        <a
+          href="https://schedulewidget.revintake.com/63535c7a4ffa2bcfdb80aa43158a76a0"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="btn btn-primary"
+          data-booking="true"
         >
-          <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden">
-            <label
-              >Don’t fill this out if you’re human: <input name="bot-field"
-            /></label>
-          </p>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone (optional)</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+          Book Now
+        </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="container footer-grid">
         <div class="footer-col">
           <h3>Sight Studio</h3>
@@ -163,9 +238,10 @@
         <div class="footer-col">
           <h4>Hours</h4>
           <p>
-            Mon–Fri: 9:00 AM–5:00 PM<br />
-            Sat: 9:00 AM–1:00 PM<br />
-            Sun: Closed
+            Sun: Closed <br />
+            Mon: Closed<br />
+            Tue–Fri: 9:00 AM–5:00 PM<br />
+            Sat: 9:00 AM–3:00 PM<br />
           </p>
         </div>
       </div>
@@ -173,7 +249,28 @@
         © <span id="currentYear"></span> Sight Studio. All rights reserved.
       </div>
     </footer>
-
     <script src="../assets/js/main.js"></script>
+    <script>
+      // Show confirmation message on form submit (for Netlify forms)
+      function showConfirmation(e) {
+        e.preventDefault();
+        document.querySelector('#form-confirmation').style.display = 'block';
+        e.target.reset();
+      }
+      // Add hover effect to cards and buttons
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.contact-info-card, .btn').forEach(function(el) {
+          el.addEventListener('mouseenter', function() {
+            el.style.boxShadow = '0 4px 16px rgba(30,86,160,0.10)';
+            el.style.transform = 'translateY(-2px) scale(1.02)';
+            el.style.transition = 'box-shadow 0.2s, transform 0.2s';
+          });
+          el.addEventListener('mouseleave', function() {
+            el.style.boxShadow = '';
+            el.style.transform = '';
+          });
+        });
+      });
+    </script>
   </body>
 </html>
