@@ -1,3 +1,95 @@
+/* Highlight Stat Styling */
+.highlight-stat {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 250px;
+}
+
+.highlight-stat h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-stat p {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 0.25rem;
+}
+/* ===== Hero (full-bleed image) ===== */
+.hero--image {
+  position: relative;
+  min-height: clamp(65vh, 80vh, 90vh); /* Taller on large screens */
+  display: flex; /* Use flex instead of grid for easier vertical centering */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  isolation: isolate;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom right, rgba(10, 22, 39, .15), rgba(10, 22, 39, .15)),
+    url("../assets/images/hero-eyecare.jpg"); /* <-- put your image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 16, 32, 0.50); /* darken for contrast */
+  z-index: -1;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 56rem;
+  padding: 2rem;
+}
+
+.hero__title {
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  /* desktop 48–56px, mobile ~34–40px (per LearnUI guidelines) */
+  font-size: clamp(2.2rem, 3.6vw + 1rem, 3.5rem);
+  margin-bottom: .5rem;
+}
+
+.hero__subtitle {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin: 0.5rem 0 2rem 0;
+  font-weight: 700;
+  text-align: center;
+  max-width: 40rem;
+}
+
+.hero__cta {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.25rem;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  font-weight: 700;
+}
+
+/* Ensure header sits above hero when sticky, if applicable */
+.site-header { position: relative; z-index: 10; }
+
+/* Optional: tighter hero on small screens */
+@media (max-width: 640px) {
+  .hero--image { min-height: 70vh; }
+}
 .contact-info-card .icon-wrapper {
   margin-bottom: 1rem;
 }
@@ -375,14 +467,8 @@ p {
   color: #ffffff;
   padding: 6rem 0;
   text-align: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    text-align: center;
+    padding: 3rem 0;
   background: rgba(0, 0, 0, 0.35);
 }
 
@@ -520,8 +606,8 @@ p {
 .cta-section {
   background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
   color: #ffffff;
-  text-align: center;
-  padding: 4rem 0;
+  text-align: left;
+  padding: 3rem 0;
 }
 
 .cta-section h2 {
@@ -852,19 +938,9 @@ select:focus {
 }
 
 /* ---------- Component Styles (moved from inline) ---------- */
-.hero-logo {
-  max-height: 400px;
-  width: auto;
-  margin: 0 auto 1rem auto;
-  display: block;
-  /*
-   * Remove any filters from the hero logo. A custom white
-   * version of the logo is used in the markup, so no
-   * inversion is required here. Keeping the image unaltered
-   * ensures the white text and glasses remain crisp against
-   * the gradient background.
-   */
-  filter: none;
+.hero__logo {
+  max-height: clamp(120px, 18vw, 220px);
+  margin-bottom: 1rem;
 }
 
 .logo img {
@@ -979,8 +1055,15 @@ select:focus {
   gap: 2rem;
 }
 
+.stats-grid .stat:first-child {
+  text-align: left;
+  padding-left: 0.3rem;
+}
+
+
+
 .stat h3 {
-  font-size: 2.5rem;
+  font-size: 3rem; /* visually strong, matches hero/section titles */
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -988,6 +1071,7 @@ select:focus {
 .stat p {
   margin: 0;
   opacity: 0.9;
+  font-size: 1.5rem; /* visually consistent with hero/section text */
 }
 
 .testimonial-rating {
@@ -1120,4 +1204,8 @@ img:not([data-lazy]) {
   .skip-link:focus {
     transition: none;
   }
+}
+
+.stat--shift-right {
+  margin-left: 7rem; /* Increase this value in small increments to test */
 }
