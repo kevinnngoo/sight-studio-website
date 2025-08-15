@@ -92,34 +92,27 @@
     </header>
 
     <!-- Hero Section -->
-    <main id="main-content">
-      <section class="hero" role="banner" aria-labelledby="hero-title">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <!--
-            Use the white version of our logo in the hero so that
-            the "Sight Studio" and "Eye Health & Vision" text
-            appears crisp against the dark gradient background.  The
-            original PNG had dark lettering that was difficult to
-            read.  See assets/images/IMG_0932_white.png for details.
-          -->
-          <img
-            src="../assets/images/glasses-2.png"
-            alt="Sight Studio logo – white version"
-            class="hero-logo"
-            loading="eager"
-            decoding="async"
-          />
-          <h1 id="hero-title">Trusted Care for Your Vision</h1>
-          <p>
-            At Sight Studio, we provide comprehensive eye care for the whole
-            family—delivering clarity, comfort and peace of mind.
-          </p>
-          <a href="services.html" class="btn btn-secondary"
-            >Explore Our Services</a
-          >
-        </div>
-      </section>
+    <!-- Hero Section (full-bleed image) -->
+   <section class="hero hero--image" role="banner" aria-labelledby="hero-title">
+  <div class="hero__bg" style="background-image: url('../assets/images/office.jpg');" role="img" aria-label="Sight Studio — friendly, modern eye care"></div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="container hero__content">
+    <img src="../assets/images/glasses-3.png" alt="Stylish glasses" class="hero__logo" />
+    <p class="hero__subtitle">Comprehensive eye care for the whole family</p>
+    <a
+      href="https://schedulewidget.revintake.com/63535c7a4ffa2bcfdb80aa43158a76a0"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="btn btn-primary hero__cta"
+      aria-label="Book an appointment at Sight Studio"
+      data-booking="true"
+    >
+      Book Appointment
+    </a>
+  </div>
+</section>
+
 
       <!-- Emergency Contact & Quick Info -->
       <section class="quick-info" aria-labelledby="quick-info-title">
@@ -301,7 +294,7 @@
               <h3>Advanced</h3>
               <p>Fundus Photography</p>
             </div>
-            <div class="stat">
+            <div class="stat stat--shift-right">
               <h3>Same Day</h3>
               <p>Service Available</p>
             </div>
