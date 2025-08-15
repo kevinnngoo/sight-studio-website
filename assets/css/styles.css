@@ -68,7 +68,7 @@
 }
 
 .hero__subtitle {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Increased slightly more */
   margin: 0.5rem 0 2rem 0;
   font-weight: 700;
   text-align: center;
@@ -606,8 +606,11 @@ p {
 .cta-section {
   background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta-section h2 {
@@ -1208,4 +1211,8 @@ img:not([data-lazy]) {
 
 .stat--shift-right {
   margin-left: 7rem; /* Increase this value in small increments to test */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
