@@ -632,22 +632,20 @@ p {
 
 /* Contact page unique card styling */
 .contact-page-card {
-  padding: 2rem;
   background: #f8fbff;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 2px 12px rgba(30,86,160,0.07);
   color: var(--color-primary);
   transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.contact-page-card:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 6px 24px rgba(30,86,160,0.12);
+  justify-content: flex-start;
+  padding: 1.5rem 1rem 1.75rem 1rem;
+  min-height: 260px;
+  height: 100%;
+  position: relative;
 }
 
 .contact-page-card .icon-wrapper {
@@ -655,14 +653,16 @@ p {
   align-items: center;
   justify-content: center;
   margin: 0 auto 1rem auto;
+  height: 48px;
 }
 
-/* Contact page card grid: force all cards in a single row on desktop */
-.card-grid {
+/* Contact page card grid: force all cards in a single row on desktop, same sizing, icons aligned */
+.contact-info-section .card-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(180px, 1fr)); /* 4 cards, smaller width */
-  gap: 1.5rem;
-  align-items: stretch;
+  grid-template-columns: repeat(3, minmax(150px, 1fr)); /* 3 cards, smaller width */
+  gap: 2rem;
+  /* align-items: stretch; */
+  margin-top: 3rem; /* add space below header */
 }
 
 @media (max-width: 900px) {
@@ -1246,6 +1246,7 @@ select:focus {
 .insurance-info p:last-child {
   font-size: 0.9rem;
   color:  #1e56a0;
+  font-weight: 700;
   font-weight: 700;
   margin-top: -1.25rem; /* Bring phone number higher */
   margin-bottom: 0.25rem;
