@@ -11,9 +11,6 @@
     grid-template-columns: 1fr;
   }
 }
-.shift-up {
-  margin-top: -2rem;
-}
 .stats-section {
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: white;
@@ -576,14 +573,33 @@ p {
 /* ---------- Services Overview ---------- */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns for 5 cards */
+  gap: 1.5rem;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 500px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
 }
 
 /* Make service cards bigger and align 'Learn more' at the bottom */
 .service-card {
   background-color: #ffffff;
-  padding: 2.25rem 1.5rem 2.5rem 1.5rem; /* bigger padding */
+  padding: 2.25rem 1.5rem 1.5rem 1.5rem; /* adjusted bottom padding */
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
@@ -610,12 +626,9 @@ p {
 
 .service-card .link {
   font-weight: 600;
-  margin-top: auto;
+  margin-top: auto; /* pushes link to bottom */
   display: block;
-  position: absolute;
-  justify-content: left;
-  left: 1.5rem;
-  bottom: 4rem; /* push up slightly from bottom */
+  padding-bottom: 0.5rem; /* adds a bit of space at bottom */
 }
 
 .service-card h3 {
@@ -974,8 +987,9 @@ p {
 /* Quick info */
 .quick-info {
   background-color: var(--color-light);
-  padding: 4rem 0 2rem 0;
-
+  padding: 2rem 0 2rem 0;
+  /* move quick info section higher */
+  margin-top: -2rem;
 }
 
 
@@ -986,6 +1000,7 @@ p {
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
 }
 .quick-info-card h3 {
   color: var(--color-primary);
@@ -1171,7 +1186,7 @@ select:focus {
 
 .quick-info {
   background-color: var(--color-light);
-  padding: 4rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .quick-info .section-title {
@@ -1181,8 +1196,13 @@ select:focus {
 .quick-info p {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 2rem auto;
   line-height: 1.6;
+}
+
+/* Ensure the paragraph directly under the container has proper spacing */
+.quick-info > .container > p {
+  margin-bottom: 2rem;
 }
 
 .quick-info-grid {
@@ -1190,8 +1210,7 @@ select:focus {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   text-align: center;
-  /* bring boxes downwards */
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .appointment-info,
@@ -1208,7 +1227,10 @@ select:focus {
   margin-bottom: 0.5rem;
   padding: 1.5rem;
   border-radius: 8px;
+ /*Bring box upward a little*/
+  
   margin: 0 auto -0.5rem auto;
+
 }
 
 
